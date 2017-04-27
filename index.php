@@ -13,7 +13,7 @@
             padding: 1rem;
         }
         body {
-            padding-top: 20vh;
+            padding-top: 10%;
         }
     </style>
 </head>
