@@ -1,7 +1,5 @@
 <?php
 
-//$config = json_decode(file_get_contents('.config.json'), true);
-
 function geocode($address)
 {
     $address = urlencode($address);
@@ -22,7 +20,7 @@ function distance($origin, $destination)
 {
     $origin = urlencode($origin);
     $destination = urlencode($destination);
-    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins={$origin}&destinations={$destination}&key={$config['api-key']}";
+    $url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins={$origin}&destinations={$destination}";
     $data = json_decode(file_get_contents($url), true);
     if ($data['status'] == 'OK') {
         $originAddress = $data['origin_addresses'][0];
