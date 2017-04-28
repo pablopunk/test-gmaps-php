@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <? include 'head.php'; ?>
+    <script type="text/javascript">
+        $(document).ready(() => $('#nav-distance').addClass('active'))
+    </script>
     <style type="text/css">
         input {
             width: 100%;
@@ -9,15 +12,8 @@
     </style>
 </head>
 <body>
+    <? include 'navbar.php' ?>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-4">
-                <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="index.php">Address</a></li>
-                    <li role="presentation" class="active"><a href="distance.php">Distance</a></li>
-                </ul>
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <form action="" method="post">
