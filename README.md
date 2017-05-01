@@ -2,4 +2,4 @@
 
 Testing the google maps API with PHP
 
-Try it at [gmaps.now.sh](https://gmaps.now.sh)
+Try it at [maps.now.sh](https://maps.now.sh)
